@@ -1,0 +1,11 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Variables: Posiciones de memoria asignadas que quedan disponibles para recibir y/o almacenar algún tipo de dato. Imagínate que es como una cajita a la que le pones un nombre y en la que puedes meter uno o varios juguetes con los que más adelante vas a poder jugar.
+
+Strings: Es un tipo de datos compuesto por una cadena de texto encerrada entre comillas (sencillas o dobles). Has de cuenta que es un tipo particular de juguete.
+
+Funciones (argumentos, return): Es una fracción de código que se utiliza para describir o procesar una tarea y devolver un resultado, con base en unos datos de entrada. Es como una ocupación que le puedes dar a un juguete la cual tendrá un resultado (return), partiendo de unas condiciones especiales (argumentos) o como si fuera una receta de cocina la cual contiene sus ingredientes iniciales (argumentos) que se utilizan para obtener un plato final (return).
+
+Declaraciones if: Son condicionales que indican el comportamiento a seguir si se cumple con una característica. Son como las cosas que puedes hacer cuando cumples con un comportamiento, por ejemplo: Si realizas tu tarea, entonces puedes jugar.
+
+Valores booleanos: Son tipos de datos que permiten declarar si un comportamiento es verdadero o falso. Es como cuando afirmas o niegas algo que has visto.
