@@ -73,16 +73,16 @@ function colors(color) {
   let answerColor = ``;
   switch (color){
     case 'blue':
-      answerColor = `This is ${color}`;
+      answerColor = `This is ${color}`;  // Más adelante refactorizar para reducir el código repetido
       break;
     case 'red':
-      answerColor = `This is ${color}`;
+      answerColor = `This is ${color}`;  // Más adelante refactorizar para reducir el código repetido
       break;
     case 'green':
-      answerColor = `This is ${color}`;
+      answerColor = `This is ${color}`;  // Más adelante refactorizar para reducir el código repetido
       break;
     case 'orange':
-      answerColor = `This is ${color}`;
+      answerColor = `This is ${color}`;  // Más adelante refactorizar para reducir el código repetido
       break;
     default:
       answerColor = `Color not found`;
