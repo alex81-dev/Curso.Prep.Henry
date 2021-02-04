@@ -11,10 +11,8 @@ function obtenerMayor(x, y) {
     return y;
   } else {
     return x;
-  }
+  };
 }
-
-obtenerMayor(4, 2);
 
 
 function mayoriaDeEdad(edad) {
@@ -25,10 +23,8 @@ function mayoriaDeEdad(edad) {
     return 'Allowed';
   } else {
     return 'Not allowed';
-  }
+  };
 }
-
-mayoriaDeEdad(18);
 
 
 function conection(status) {
@@ -43,10 +39,8 @@ function conection(status) {
     return 'Away';
   } else {
     return 'Offline';
-  }
+  };
 }
-
-conection(1);
 
 
 function saludo(idioma) {
@@ -64,10 +58,8 @@ function saludo(idioma) {
     return 'Hello!';
   } else {
     return 'Hola!';
-  }
+  };
 }
-
-saludo('aleman');
 
 
 function colors(color) {
@@ -78,7 +70,7 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  var answerColor;
+  let answerColor = ``;
   switch (color){
     case 'blue':
       answerColor = `This is ${color}`;
@@ -93,12 +85,10 @@ function colors(color) {
       answerColor = `This is ${color}`;
       break;
     default:
-      answerColor = 'Color not found';
-  }
+      answerColor = `Color not found`;
+  };
   return answerColor;
 }
-
-colors('blue');
 
 
 function esDiezOCinco(numero) {
@@ -109,10 +99,8 @@ function esDiezOCinco(numero) {
     return true;
   } else {
     return false;
-  }
+  };
 }
-
-esDiezOCinco(10);
 
 
 function estaEnRango(numero) {
@@ -123,10 +111,8 @@ function estaEnRango(numero) {
     return true;
   } else {
     return false;
-  }
+  };
 }
-
-estaEnRango(35);
 
 
 function esEntero(numero) {
@@ -141,15 +127,14 @@ function esEntero(numero) {
     return true;
   } else {
     return false;
-  }
+  };
+
   // if(numero - Math.floor(numero) === 0) {
   //   return true;
   // } else {
   //   return false;
-  // }
+  // };
 }
-
-esEntero(11);
 
 
 function fizzBuzz(numero) {
@@ -165,10 +150,8 @@ function fizzBuzz(numero) {
     return 'buzz';
   } else {
     return numero;
-  }
+  };
 }
-
-fizzBuzz(15);
 
 
 function operadoresLogicos(num1, num2, num3) {
@@ -188,10 +171,8 @@ function operadoresLogicos(num1, num2, num3) {
     return num3 + 1;
   } else {
     return false;
-  }
+  };
 }
-
-operadoresLogicos(1, 2, 3);
 
 
 function esPrimo(numero) {
@@ -206,16 +187,13 @@ function esPrimo(numero) {
     return true;
    } else {
      for(let i = 2; i < numero; i++) {
-       console.log(i);
        if(numero % i === 0) {
          return false;
-       }
-     }
+       };
+     };
      return true;
-   }
+   };
 }
-
-esPrimo(9);
 
 
 function esVerdadero(valor){
@@ -226,10 +204,8 @@ function esVerdadero(valor){
     return "Soy verdadero";
   } else {
     return "Soy falso";
-  }
+  };
 }
-
-esVerdadero(true);
 
 
 function tablaDelSeis(){
@@ -238,12 +214,10 @@ function tablaDelSeis(){
   //Escribe tu código aquí   
   let arrayTablaDel6 = [];
   for (let i = 0; i < 11; i++) {
-        arrayTablaDel6.push(6 * i);
-  }
+    arrayTablaDel6.push(6 * i);
+  };
   return arrayTablaDel6;  
 }
-
-tablaDelSeis();
 
 
 function tieneTresDigitos(numero){
@@ -253,27 +227,23 @@ function tieneTresDigitos(numero){
     return true;
   } else {
     return false;
-  }  
+  }; 
 }
-
-tieneTresDigitos(100);
 
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var increaseNumber = numero;
-  var nTimes = 0;
+  let increaseNumber = numero;
+  let nTimes = 0;
   do {
-    nTimes = nTimes + 1;
-    increaseNumber = increaseNumber + 5;
+    nTimes += 1;
+    increaseNumber += 5;
   }
   while (nTimes < 8);
     return increaseNumber;
 }
-
-doWhile(0);
 
 
 
