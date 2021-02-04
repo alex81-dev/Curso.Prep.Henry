@@ -298,19 +298,19 @@ function esVocal(letra){
   } else {
     switch(letra){
       case 'a':
-        message = 'Es vocal';
+        message = 'Es vocal';  // Más adelante refactorizar para reducir el código repetido
         break;
       case 'e':
-        message = 'Es vocal';
+        message = 'Es vocal';  // Más adelante refactorizar para reducir el código repetido
         break;
       case 'i':
-        message = 'Es vocal';
+        message = 'Es vocal';  // Más adelante refactorizar para reducir el código repetido
         break;
       case 'o':
-        message = 'Es vocal';
+        message = 'Es vocal';  // Más adelante refactorizar para reducir el código repetido
         break;
       case 'u':
-        message = 'Es vocal';
+        message = 'Es vocal';  // Más adelante refactorizar para reducir el código repetido
         break;
       default:
         message = 'La letra ingresada no es ninguna vocal';
