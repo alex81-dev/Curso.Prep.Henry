@@ -261,7 +261,7 @@ function mesesDelAño(array) {
   // Cycle
   const monthsFound = [];
   let checkItems = [];
-  let checkingMonths = ['Enero', 'Marzo', 'Noviembre'];
+  let checkingMonths = ['Enero', 'Marzo', 'Noviembre'];  // Más adelante refactorizar para que sea un input customizable
   if(checkingMonths.length <= array.length){
     for(let i = 0; i < array.length; i++){
       let compareMonth = array[i];
