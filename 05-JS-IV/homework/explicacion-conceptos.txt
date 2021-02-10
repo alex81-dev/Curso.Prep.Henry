@@ -1,0 +1,11 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Objetos: Es una representación de algo que existe en la vida real o virtual, está compuesto por un nombre seguido de un igual (=) y un conjunto de propiedades desordenadas, pero especificas que lo describen, dichas propiedades, van en pares denominados key/value. Imaginate que es una forma de describir cualquier cosa, como cuando tienes un carrito de juguete y lo comienzas a detallar agrupando cada una de las características que lo componen (llamadas key), seguidas de dos puntos (:) y del valor que le desees asignar, por ejemplo, llantas: 4, puertas: 2, motor: 1, color: rojo, etc.
+
+Propiedades: Son todas aquellas características a las que se le asigna un valor y las cuales se agrupan para describir un objeto.
+
+Métodos: Son funciones que están relacionadas o se encuentran dentro de una clase, de cualquier objeto que sea una instancia de la clase o de cualquier variable dependiendo del tipo de dato que almacena. Normalmente, los métodos cumplen con realizar aquellas tareas o funciones requeridas por una clase, por ejemplo, si la clase fuese el carrito de juguete algunos de los métodos que tendría serían encenderCarro(); apagarCarro(); acelerarCarro(); etc.
+
+Bucle for ... in: Es un ciclo for que declara una variable sobre la cual iterará en todas las propiedades del objeto, seguida de la palabra in y del nombre del objeto en el que se va a iterar. Si deseas conocer todas las propiedades de tu carrito de juguete podrías utilizar este ciclo e imprimir el valor que se va almacenando en la variable durante cada iteración.
+
+Notación de puntos vs notación de corchetes: Son aquellas formas disponibles para crear, asignar, acceder y elminar propiedades de un objeto. Por ejemplo, si deseas cambiarle el color a tu carrito de jueguete podrías hacerlo utilizando expresiones como carro.color = celeste o carro[color] = celeste son maneras diferentes de realizar las mismas acciones con algunas diferencias como, por ejemplo, que la notación de corchetes es más flexible en cuanto a los caracteres de los nombres que se le pueden dar a una propiedad.
