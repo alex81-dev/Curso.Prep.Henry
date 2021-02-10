@@ -52,32 +52,32 @@ function agregarStringInvertida() {
 
 
 // ---------------------------------------------------------------------------//
-  //Crea el constructor de la clase "Persona"
-  //Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio"
-  //Debe tener un método llamado "detalle" que nos devuelve un objeto con las propiedades de la persona y sus valores.
-  //Ej: { 
+  // Crea el constructor de la clase "Persona"
+  // Debe tener las propiedades: "nombre", "apellido", "edad" y "domicilio"
+  // Debe tener un método llamado "detalle" que nos devuelve un objeto con las propiedades de la persona y sus valores.
+  // Ej: { 
     //   Nombre: 'Juan',
     //   Apellido: 'Perez',
     //   Edad: 22,
     //   Domicilio: 'Saavedra 123'
     //  }
 
-  class Persona {
-    constructor(/*Escribir los argumentos que recibe el constructor*/ nombre, apellido, edad, domicilio) {
-      // Crea el constructor:
-      this.nombre = nombre;
-      this.apellido = apellido;
-      this.edad = edad;
-      this.domicilio = domicilio;
-      this.detalle = function() {
-        return {
-          Nombre: 'Juan',
-          Apellido: 'Perez',
-          Edad: 22,
-          Domicilio: 'Saavedra 123'
-        };
+class Persona {
+  constructor(/*Escribir los argumentos que recibe el constructor*/ nombre, apellido, edad, domicilio) {
+    // Crea el constructor:
+    this.nombre = nombre;
+    this.apellido = apellido;
+    this.edad = edad;
+    this.domicilio = domicilio;
+    this.detalle = function() {
+      return {
+        Nombre: 'Juan',
+        Apellido: 'Perez',
+        Edad: 22,
+        Domicilio: 'Saavedra 123'
       };
     };
+  };
 }
 
 
