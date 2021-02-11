@@ -5,6 +5,8 @@ function devolverPrimerElemento(array) {
   // Tu código:
   const firstArrayElement = array[0];
   return firstArrayElement;
+
+  // return array[0];
 }
 
 
@@ -13,6 +15,8 @@ function devolverUltimoElemento(array) {
   // Tu código:
   const lastArrayElement = array[array.length - 1];
   return lastArrayElement;
+
+  // return array[array.length - 1];
 }
 
 
@@ -21,6 +25,8 @@ function obtenerLargoDelArray(array) {
   // Tu código:
   const arraySize = array.length;
   return arraySize;
+
+  // return array.length;
 }
 
 
@@ -37,7 +43,7 @@ function incrementarPorUno(array) {
   return increaseArray;
 
   // Method
-  // let increaseArray = array.map(function(item){
+  // let increaseArray = array.map(function(item) {
   //   return item + 1;
   // });
   // return increaseArray;
@@ -52,6 +58,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  // Method
   const includeElementToArray = array;
   includeElementToArray.push(elemento);
   return includeElementToArray;
@@ -63,6 +70,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  // Method
   const newFirstArrayElement = array;
   newFirstArrayElement.unshift(elemento);
   return newFirstArrayElement;
@@ -85,7 +93,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  // Cycle
+  // Cycle and conditional
   for(let i = 0; i < array.length; i++){
     if(array[i] === elemento){
       return true;
@@ -94,7 +102,7 @@ function arrayContiene(array, elemento) {
   return false;
 
   // Method
-  // const checkElement = array.find(function (item){
+  // const checkElement = array.find(function(item) {
   //   return item === elemento;
   // });
   // if(checkElement){
@@ -125,7 +133,7 @@ function agregarNumeros(numeros) {
   return addingArrayNumbers;
 
   // Method
-  // let addingArrayNumbers = numeros.reduce(function(preValue, actValue){
+  // let addingArrayNumbers = numeros.reduce(function(preValue, actValue) {
   //  return preValue + actValue;
   // });
   // return addingArrayNumbers;
@@ -168,8 +176,8 @@ function numeroMasGrande(numeros) {
   // Tu código:
   // Cycle
   let greaterNumber = 0;
-  for (let i = 0; i < numeros.length; i++){
-    if (numeros[i] > greaterNumber){
+  for(let i = 0; i < numeros.length; i++){
+    if(numeros[i] > greaterNumber){
       greaterNumber = numeros[i];
     };
   };
@@ -194,10 +202,10 @@ function multiplicarArgumentos() {
 }
 
 
-function cuentoElementos(arreglo){
+function cuentoElementos(arreglo) {
   // Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 19.
   // Tu código:
-  // Cycle
+  // Cycle and conditional
   let counter = 0;
   for(let i = 0; i < arreglo.length; i++){
     if(arreglo[i] > 19){
@@ -230,7 +238,7 @@ function empiezaConNueve(n) {
   // Tu código:
   // Conditional
   const checkingNumber = n.toString();
-  if (checkingNumber[0] == 9){
+  if(checkingNumber[0] == 9){
     return true;
   } else {
     return false;
@@ -258,7 +266,7 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   // Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-  // Cycle
+  // Cycles and conditional
   const monthsFound = [];
   let checkItems = [];
   let checkingMonths = ['Enero', 'Marzo', 'Noviembre'];  // Más adelante refactorizar para que sea un input customizable
@@ -288,7 +296,7 @@ function mayorACien(array) {
   // La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   // valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
-  // Cycle
+  // Cycle and conditional
   const newArray = [];
   for(let i = 0; i < array.length; i++){
     if(array[i] > 100){
@@ -307,7 +315,7 @@ function breakStatement(numero) {
   // devolver: "Se interrumpió la ejecución"
   // Pista: usá el statement 'break'
   // Tu código:
-  // Cycle
+  // Cycle, conditional and statement
   const newArray = [];
   let increaseNumberToInsert = numero;
   for(var i = 0; i < 10; i++){
@@ -333,7 +341,7 @@ function continueStatement(numero) {
   // Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   // Pista: usá el statement 'continue'
   // Tu código:
-  // Cycle
+  // Cycle, conditional and statement
   const newArray = [];
   let increaseNumberToInsert = numero;
   for(var i = 0; i < 10; i++){
