@@ -1,0 +1,3 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+Funciones Callback: Un callback es una función que toma como argumento (valor asignado a su parámetro) otra función para realizar una acción programada, por tanto, es una función de orden superior. Es como si tuvieras tu carrito de juguete a control remoto y presionaras el boton de encender, pero en esa primera función, el carrito de juguete envía una segunda función (como parámetro) necesaria que revisa si tiene batería antes de encender y poner funcional tu juguete.
