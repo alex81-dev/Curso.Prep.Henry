@@ -3,31 +3,37 @@
     box-sizing: border-box;
     margin: 2px;
 }
+
 body{
     background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
-    font-family: sans-serif;
 }
-.father{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    padding: 10px;
-}
+
 h1{
     color: darkred;
 }
+
 img{
     width: 400px;
 }
+
+.divClass{
+    margin: 50px;
+}
+
+.divClass > a{
+    margin-left: 450px;
+}
+
 #thirdDiv{
     background-color: lightblue;
     height: 600px;
+    margin: 50px;
     width: 500px;
 }
+
 #spanId{
     border: 2px solid black;
-    border-radius: 10%;
+    border-radius: 20px;
     font-size: 18px;
     margin: 50px;
     padding: 50px;
