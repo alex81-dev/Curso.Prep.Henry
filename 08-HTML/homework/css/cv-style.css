@@ -1,0 +1,248 @@
+/*------------- START OF NODE FLOW -------------*/
+/*================================================
+EXTRA SMALL (xs) - CHECK MOBILE FIRST VERTICAL VIEW 320px OR HORIZONTAL VIEW 480px
+================================================*/
+/*================================================
+GLOBAL
+================================================*/
+/*-- Apply a natural box layout model to all elements, but allowing components to change --*/
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 1.2em;
+  height: 100%;
+  width: 100%;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(24, auto);
+  grid-auto-rows: minmax(5em, auto);
+  grid-gap: 0.2em;
+}
+
+#header, #aside, #section, .footer{
+  grid-column: 1 / 25;
+}
+/*================================================
+SECTION 1
+================================================*/
+#header{
+  background: #2b3136;
+  grid-row: 1 / 2;
+  justify-content: center;
+  padding: 4em 2em;
+  text-align: center;
+
+  /*height: 16em;*/
+}
+
+h2{
+  color: #fff;
+  font-size: 3em;
+  margin: auto;
+}
+
+h1{
+  color: #45b39d;
+  font-size: 1.4em;
+  margin: auto;
+}
+/*================================================
+SECTION 2
+================================================*/
+#aside{
+  background: linear-gradient(to bottom, #a2d9ce, #45b39d);
+  grid-row: 2 / 6;
+
+  /*width: 100%;*/
+  /*height: 20%;*/
+  /*float: left;*/
+}
+
+#proPic{
+  border: .6em solid #45b39d;
+  border-radius: 100%;
+  display: block;
+  margin: auto;
+
+  /*width: 80%;*/
+}
+
+.h3{
+  background: #2b3136;
+  color: #fff;
+  margin: auto 2em;
+  padding: 0.5em;
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  display: flex;
+  margin-left: 1em;
+}
+
+li > p{
+  margin: 0.3em 0 0 1.5em;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5;
+}
+/*================================================
+SECTION 3
+================================================*/
+#section{
+  grid-row: 6 / 18;
+
+  /*display: flex;*/
+  /*justify-content: center;
+  align-items: center;*/
+  /*flex-flow: row wrap;*/
+  border: 1px solid black;
+}
+  
+.article{
+
+  /*width: 100%;*/
+  /*height: 80%;*/
+  border: 1px solid red;
+}
+
+.h4{
+  background: #2b3136;
+  color: #fff;
+  margin: auto 2em;
+  padding: 0.4em;
+  text-align: left;
+}
+/*================================================
+SECTION 4
+================================================*/
+.footer{
+  background: #2b3136;
+  grid-row: 18;
+}
+
+
+/*================================================
+SMALL (sm) - CHECK TABLET VERTICAL VIEW 768px
+================================================*/
+@media(min-width: 768px) and (max-width: 992px){
+  /*================================================
+  SECTION 2 - FlexBox Pattern = Mostly Fluid
+  ================================================*/
+  #contPic{
+    height: 100%;
+    width: 50%;
+
+    border: 1px solid black;
+  }
+
+  /*.two, .three{
+    width: 25%;
+    height: 50%;
+  }*/
+}
+
+
+/*================================================
+MEDIUM (md) - CHECK TABLET HORIZONTAL VIEW 1024px
+================================================*/
+@media(min-width: 992px) and (max-width: 1200px){
+  /*================================================
+  GLOBAL
+  ================================================*/
+  #aside, #section{
+    grid-row: 2 / 18;
+  }
+  /*================================================
+  SECTION 2
+  ================================================*/
+  #aside{
+    grid-column: 1 / 4;
+  }
+  /*================================================
+  SECTION 3
+  ================================================*/
+  #section{
+    grid-column: 4 / 25;
+  }
+
+  .article{
+    padding: 0.5em 1em;
+  }
+}
+
+
+/*================================================
+LARGE (lg) - CHECK PC OR LAPTOP
+================================================*/
+@media(min-width: 1200px){
+  /*================================================
+  GLOBAL
+  ================================================*/
+  #header, .footer{
+    grid-column: 2 / 24;
+  }
+  /*================================================
+  SECTION 1
+  ================================================*/
+  #header{
+    grid-row: 1 / 5;
+    margin: 2em 0 0.5em 0;
+  }
+  /*================================================
+  SECTION 2
+  ================================================*/
+  #aside{
+    grid-column: 3 / 5;
+    grid-row: 1 / 19;
+    height: 100%;
+    z-index: 5;
+
+    /*grid-column-end: span 12;*/
+    /*width: 30%;*/
+  }
+
+  #contPic{
+    padding-top: 4em;
+  }
+  /*================================================
+  SECTION 3
+  ================================================*/
+  #section{
+    grid-column: 5 / 24;
+    grid-row: 5 / 18;
+
+    /*width: 70%;
+    float: left;
+    margin: 1em;*/
+    z-index: 7;
+  }
+
+  .article{
+
+    /*padding: 0 2em;
+    grid-column: 6 / 23;
+    float: right;
+    height: 100%;
+    width: 60%;
+    z-index: 7;*/
+  }
+  /*================================================
+  SECTION 4
+  ================================================*/
+  .footer{
+    margin-bottom: 1.5em;
+    z-index: 10;
+  }
+}
